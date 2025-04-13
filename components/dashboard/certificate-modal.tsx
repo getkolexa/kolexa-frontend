@@ -25,7 +25,7 @@ export default function CertificateModal({ isOpen, onClose, certificate }: Certi
   if (!isOpen) return null
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(`https://educhain.ai/verify/${certificate.verificationId}`)
+    navigator.clipboard.writeText(`https://kolexa.ai/verify/${certificate.verificationId}`)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -42,7 +42,7 @@ export default function CertificateModal({ isOpen, onClose, certificate }: Certi
 
         <div className="bg-gradient-to-r from-purple-900 to-blue-900 rounded-lg p-6 mb-4">
           <div className="border border-white/20 rounded-lg p-6 flex flex-col items-center text-center">
-            <div className="text-xs text-gray-300 mb-2">EDUCHAIN AI PRESENTS</div>
+            <div className="text-xs text-gray-300 mb-2">KOLEXA AI PRESENTS</div>
             <h2 className="text-xl font-bold text-white mb-1">CERTIFICATE OF COMPLETION</h2>
             <div className="w-16 h-0.5 bg-purple-400 mb-4"></div>
             <p className="text-sm text-gray-200 mb-4">This certifies that</p>
@@ -86,7 +86,7 @@ export default function CertificateModal({ isOpen, onClose, certificate }: Certi
             <label className="text-xs text-gray-400 mb-1 block">Verification Link</label>
             <div className="flex items-center">
               <div className="flex-1 bg-slate-800 border border-white/10 rounded-l-md px-2 py-1.5 text-xs text-white overflow-hidden">
-                <div className="truncate">https://educhain.ai/verify/{certificate.verificationId}</div>
+                <div className="truncate">https://kolexa.ai/verify/{certificate.verificationId}</div>
               </div>
               <Button
                 variant="outline"

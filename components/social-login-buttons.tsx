@@ -4,9 +4,20 @@ import { Button } from "@/components/ui/button"
 export default function SocialLoginButtons() {
   return (
     <div className="grid grid-cols-1 gap-4">
+      
+
+      <Button
+        className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white border-0 flex items-center justify-center"
+        size="lg"
+      >
+        <Wallet className="w-5 h-5 mr-2" />
+        Connect Wallet
+      </Button>
+
+
       <Button
         variant="outline"
-        className="w-full border border-white/10 text-white hover:bg-white/10 flex items-center justify-center"
+        className="w-full border border-white/10 text-black hover:text-white hover:bg-white/10 flex items-center justify-center"
         size="lg"
       >
         <svg className="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -28,14 +39,6 @@ export default function SocialLoginButtons() {
           />
         </svg>
         Continue with Google
-      </Button>
-
-      <Button
-        className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white border-0 flex items-center justify-center"
-        size="lg"
-      >
-        <Wallet className="w-5 h-5 mr-2" />
-        Connect Wallet
       </Button>
     </div>
   )

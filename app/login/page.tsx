@@ -7,6 +7,19 @@ import SocialLoginButtons from "@/components/social-login-buttons"
 export default function LoginPage() {
   return (
     <AuthLayout title="Log In to Your Account">
+
+
+       
+
+        <SocialLoginButtons />
+
+         <div className="relative flex items-center justify-center my-6">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-white/10"></div>
+          </div>
+          <div className="relative px-4 text-sm text-gray-400 bg-slate-900">or continue with</div>
+        </div>
+
       <div className="space-y-6 w-full">
         <div className="space-y-4">
           <div className="space-y-2">
@@ -59,14 +72,6 @@ export default function LoginPage() {
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
 
-        <div className="relative flex items-center justify-center">
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-white/10"></div>
-          </div>
-          <div className="relative px-4 text-sm text-gray-400 bg-slate-900">or continue with</div>
-        </div>
-
-        <SocialLoginButtons />
 
         <div className="text-center text-sm text-gray-400">
           Don't have an account?{" "}

@@ -203,11 +203,11 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           <div className={cn("flex items-center h-12 px-3", !sidebarOpen && !isMobile && "justify-center")}>
             <Link href="/" className="flex items-center">
               <div className="h-6 w-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
-                <span className="text-white font-bold text-[10px]">E</span>
+                <span className="text-white font-bold text-[10px]">K</span>
               </div>
               {(sidebarOpen || isMobile) && (
                 <span className={`ml-2 text-sm font-semibold ${darkMode ? "text-white" : "text-slate-800"}`}>
-                  EduChain<span className="text-purple-500">AI</span>
+                  KOLEX<span className="text-purple-500">AI</span>
                 </span>
               )}
             </Link>

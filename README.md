@@ -30,8 +30,8 @@ KOLEXA is a cutting-edge educational platform that combines AI-powered learning 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/nexuslearn.git
-   cd nexuslearn
+   git clone https://github.com/getkolexa/kolexa-frontend.git
+   cdkolexa-frontend
    ```
 2. Install dependencies:
 

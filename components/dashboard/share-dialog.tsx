@@ -13,8 +13,8 @@ interface ShareDialogProps {
 export default function ShareDialog({ onClose, messageId, darkMode }: ShareDialogProps) {
   const [copied, setCopied] = useState(false)
   const shareUrl = messageId
-    ? `https://educhain.ai/share/message/${messageId}`
-    : `https://educhain.ai/share/chat/blockchain-fundamentals`
+    ? `https://kolexa.ai/share/message/${messageId}`
+    : `https://kolexa.ai/share/chat/blockchain-fundamentals`
 
   const handleCopy = () => {
     navigator.clipboard.writeText(shareUrl)

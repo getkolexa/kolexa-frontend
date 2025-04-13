@@ -5,6 +5,12 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "KOLEXAI",
   description: "created by Ayomisco",
+  metadataBase: new URL('http://localhost:3000'),
+  openGraph: {
+    title: 'KOLEXAI',
+    description: 'created by Ayomisco',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
@@ -13,8 +19,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="min-h-screen bg-slate-900 antialiased">
+        {children}
+      </body>
     </html>
   )
 }

@@ -37,10 +37,10 @@ export default function AuthLayout({ children, title, description }: AuthLayoutP
               <Link href="/" className="inline-block">
                 <div className="flex items-center justify-center">
                   <div className="h-10 w-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mr-2">
-                    <span className="text-white font-bold text-lg">E</span>
+                    <span className="text-white font-bold text-lg">K</span>
                   </div>
                   <span className="text-2xl font-bold text-white">
-                    EduChain<span className="text-purple-500">AI</span>
+                    KOLEX<span className="text-purple-500">AI</span>
                   </span>
                 </div>
               </Link>
